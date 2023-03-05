@@ -1,0 +1,18 @@
+// Mixins acá
+
+//construir funciones en js variable y parametros por defecto.
+.flex(@direction: row, @justify: center, @align: center) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.img(@border:20px) {
+  border-radius: @border;
+}
+
+.boton(@bgcolor,@fontcolor) {
+  background-color: @bgcolor;
+  color: @fontcolor;
+}

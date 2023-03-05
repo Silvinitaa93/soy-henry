@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/formulario.css" />
+  </head>
+  <body>
+    <form method="post">
+      <fieldset class="form-register">
+        <h2>Formulario de Registro</h2>
+        <p>Por favor complete sus datos</p>
+        <label for="first-name">Ingrese su nombre: <input id="first-name" name="first-name" type="text" placeholder="Ingrese su nombre" required /></label>
+        <label for="last-name">Ingrese su apellido: <input id="last-name" name="last-name" type="text" placeholder="Ingrese su apellido" required /></label>
+        <label for="email">Email: <input id="email" name="email" type="email" placeholder="Ingrese su mail" required /></label>
+        <label for="new-password">Nueva Contraseña: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" placeholder="Cree una contraseña" required /></label>
+        <p>Estoy de acuerdo con <a class="terminos" href="#">Términos y Condiciones</a></p>
+        <input class="boton" type="submit" value="Registrar">
+        <p><a class="cuenta" href="#">¿Ye tengo Cuenta?</a></p>
+        </form>
+      </fieldset>
+  </body>
+</html>

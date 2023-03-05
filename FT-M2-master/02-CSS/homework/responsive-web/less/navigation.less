@@ -1,0 +1,59 @@
+// Código de Nav acá
+
+/* .flex(@direction: row, @justify: center, @align: center) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+} */
+// voy a traerme un mixin
+// .flex(direction, justify, align)
+
+nav {
+  .flex(column);
+  padding-top: 10px;
+  background-color: @nav-bg;
+  border: @nav-border 2px solid;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  border-radius: 25px;
+  opacity: 0.8;
+
+  @media @phone {
+    width: 100%;
+  }
+  ul {
+    .flex(@justify: space-around);
+    width: 70%;
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+  li {
+    a {
+      text-decoration: none;
+      color: @nav-font;
+      padding: 10px;
+      position: relative;
+      font-weight: bold;
+    }
+  }
+}
+
+a:after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: grey;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all 0.5s;
+  will-change: width;
+}
+
+a:hover:after {
+  width: 100%;
+  right: 0;
+}
